@@ -1,11 +1,14 @@
 # M01W02 - Objects in JS
 
+[Video](https://vimeo.com/829658642/8079c630da?share=copy)  
+[Code](https://github.com/DevHalpin/lectures2023/tree/master/flex/15_05_Eve/mod1/w02/objects)  
+
 ### To Do
 - [x] Review primitive types
 - [x] Objects!
 - [x] Passing primitives and objects to functions
-- [] Functions inside objects (using `this`)
-- [] Object iteration with `for..in`
+- [x] Functions inside objects (using `this`)
+- [x] Object iteration with `for..in`
 
 ### Primitive Types
 - JavaScript has 7 primitive types:
