@@ -1,0 +1,20 @@
+{
+  "name": "tdd_with_mocha_chai",
+  "version": "1.0.0",
+  "description": "### To Do - [] Manual testing - [] Making assertions - [] Bringing in outside code - [] Exporting our code - [] Intro to NPM: a Node package manager - [] Mocha test runner - [] Ignoring files/folders - [] Chai assertion library - [] What is TDD?",
+  "main": "add.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "echo": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+  }
+}
