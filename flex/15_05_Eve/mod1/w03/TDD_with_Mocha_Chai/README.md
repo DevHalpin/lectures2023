@@ -1,15 +1,18 @@
 # Mod1W03 - TDD, CommonJS, and NPM
 
+[Video:](https://vimeo.com/831727421/bc3e6af96d?share=copy)  
+[Code:](https://github.com/DevHalpin/lectures2023/tree/master/flex/15_05_Eve/mod1/w03/TDD_with_Mocha_Chai)  
+
 ### To Do
-- [] Manual testing
-- [] Making assertions
-- [] Bringing in outside code
-- [] Exporting our code
-- [] Intro to NPM: a Node package manager
-- [] Mocha test runner
-- [] Ignoring files/folders
-- [] Chai assertion library
-- [] What is TDD?
+- [x] Manual testing
+- [x] Making assertions
+- [x] Bringing in outside code
+- [x] Exporting our code
+- [x] Intro to NPM: a Node package manager
+- [x] Mocha test runner
+- [x] Ignoring files/folders
+- [x] Chai assertion library
+- [x] What is TDD?
 
 
 3 ways to install packages: 
