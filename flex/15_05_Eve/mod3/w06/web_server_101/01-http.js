@@ -5,6 +5,7 @@ const server = http.createServer();
 
 server.on('request', (request, response) => {
   response.write("Hello world");
+  response.end();
 });
 
 server.listen(port, ()=> {

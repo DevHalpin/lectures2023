@@ -1,10 +1,12 @@
 # Mod3W06 - Web Servers 101
 
+[Video](https://vimeo.com/838148326/d4da21edf0?share=copy)  
+
 ### To Do
 
-- [] Web Servers
-- [] Express
-- [] Middleware
+- [x] Web Servers
+- [x] Express
+- [x] Middleware
 
 ### Web Servers
 

@@ -1,4 +1,5 @@
 const express = require('express');
+const morgan = require('morgan');
 const app = express();
 const port = 3000;
 
@@ -6,6 +7,8 @@ app.use((req,res,next) => {
   console.log(`${req.method} ${req.url}`);
   next();
 });
+
+app.use(morgan('dev'));
 
 app.get('/', (req,res) => {
   res.sendFile(`${__dirname}/index.html`);

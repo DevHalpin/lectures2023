@@ -2,15 +2,22 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+app.set('view engine', 'ejs');
+
 app.use((req,res,next) => {
   console.log(`${req.method} ${req.url}`);
   next();
 });
 
 app.get('/', (req,res) => {
-  res.sendFile(`${__dirname}/index.html`);
-  // res.send(`${__dirname}`);
-  // res.send('This is a GET request to "/"');
+  const templateVars = {
+    message: "Hello there",
+    username: "Bob",
+    age: 42,
+    error: null
+  };
+
+  res.render('index', templateVars);
 });
 
 app.get('/users', (req,res) => {
