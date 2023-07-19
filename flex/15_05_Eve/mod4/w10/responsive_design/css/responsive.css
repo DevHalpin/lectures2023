@@ -1,0 +1,23 @@
+@media only screen and (max-width: 600px) {
+  nav ul {
+    display: none;
+  }
+  nav div {
+    display: block;
+  }
+  header {
+    padding-top: 5em;
+    font-size: 0.8em;
+    text-align: center;
+  }
+  article {
+    max-width: 80vw;
+  }
+}
+@media only screen and (min-width: 992px) {
+  article {
+    max-width: 16vw;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */
