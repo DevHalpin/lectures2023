@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- React Library Core: -->
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <!-- React Library DOM: -->
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <!-- Babel (for JSX Compatibility): -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      const domContainerElement = document.getElementById("root");
+      const reactRoot = ReactDOM.createRoot(domContainerElement);
+
+      const visible = true;
+
+      function HelloComponent() {
+        // Here we can see JSX at work! Much cleaner...
+        return (<React.Fragment>
+            <p class="paragraph"
+              onClick={() => {
+                console.log("Clicked!");
+              }}
+            >
+              Hello, World!
+            </p>
+            {visible && <p>I'm text</p>}
+            <br/>
+          </React.Fragment>
+        );
+      }
+      // const HelloComponent = () => {}
+      reactRoot.render(HelloComponent());
+    </script>
+  </body>
+</html>
