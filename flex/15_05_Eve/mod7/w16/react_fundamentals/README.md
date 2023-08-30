@@ -1,11 +1,11 @@
 # Mod7W16 | React Fundamentals
 
-* [] React — what is it, and why use it?
-* [] JSX (JavaScript XML)
-* [] Components
-* [] Props
-* [] State
-* [] Controlled Components
+* [x] React — what is it, and why use it?
+* [x] JSX (JavaScript XML)
+* [x] Components
+* [x] Props
+* [x] State
+* [x] Controlled Components
 
 ## React
 
