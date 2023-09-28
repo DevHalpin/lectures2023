@@ -1,0 +1,26 @@
+[
+  {
+      "id": 0,
+      "pokemonName": "Pikachu",
+      "level": 10,
+      "type": "electric"
+  },
+  {
+      "id": 1,
+      "pokemonName": "Charizard",
+      "level": 36,
+      "type": "fire/flying"
+  },
+  {
+      "id": 2,
+      "pokemonName": "Mewtwo",
+      "level": 50,
+      "type": "psychic"
+  },
+  {
+      "id": 3,
+      "pokemonName": "Psyduck",
+      "level": 100,
+      "type": "water/psychic"
+  }
+]

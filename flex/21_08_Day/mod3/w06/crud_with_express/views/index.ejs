@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon Database</title>
+</head>
+<body>
+  <h1>Welcome to my database of Pokemon!</h1>
+  <p>List of Pokemon:</p>
+  <ul>
+    <% for (const pokemon of pokemonDb) { %>
+      <l1><%= pokemon.pokemonName %> is level <%= pokemon.level %>,
+      and has a type of <%= pokemon.type %>.</l1><br>
+      <% } %>
+  </ul>
+  
+</body>
+</html>
