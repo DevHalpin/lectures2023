@@ -5,9 +5,9 @@
 - [x] Storing passwords
 - [x] Encrypted cookies
 - [x] HTTP Secure (HTTPS)
-- [ ] REST
-- [ ] More HTTP methods
-- [ ] Method Override [Stretch]
+- [x] REST
+- [x] More HTTP methods
+- [x] Method Override [Stretch]
 
 ### Storing Passwords
 
