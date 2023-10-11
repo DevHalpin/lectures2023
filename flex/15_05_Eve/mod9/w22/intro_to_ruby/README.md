@@ -6,9 +6,9 @@
 * [x] Conditionals
 * [x] Loops
 * [x] Methods
-* [] Hashes
-* [] Blocks and Lambdas
-* [] Classes
+* [x] Hashes
+* [x] Blocks and Lambdas
+* [x] Classes
 
 ### Comments and Printing to Standard Out
 
