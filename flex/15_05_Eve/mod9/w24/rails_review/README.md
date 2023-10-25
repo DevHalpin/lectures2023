@@ -1,9 +1,12 @@
 # M09W24 - Rails Review
 
+[Video](https://vimeo.com/877725535/cac5b75fc1?share=copy)  
+[Code](https://github.com/DevHalpin/lectures2023/tree/master/flex/15_05_Eve/mod9/w24/rails_review)  
+
 ### To Do
-- [ ] Ruby Conversation
-- [ ] MVC Review
-- [ ] Quickly build simple Rails app
+- [x] Ruby Conversation
+- [x] MVC Review
+- [x] Quickly build simple Rails app
 
 ### Model View Controller Review
 - **Model:** Responsible for handling data logic (eg. database queries)
