@@ -1,0 +1,10 @@
+{
+  "extends": "@tsconfig/recommended",
+  "compilerOptions": {
+    "target": "es2020",
+    "resolveJsonModule": true,
+    "outDir": "dist"
+
+  },
+  "include": ["src/**/*"]
+}

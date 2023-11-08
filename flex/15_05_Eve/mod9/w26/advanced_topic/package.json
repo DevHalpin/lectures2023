@@ -1,0 +1,21 @@
+{
+  "name": "advanced_topic",
+  "version": "1.0.0",
+  "description": "- [ ] What is TypeScript, how does it work, and what problem does it solve? - [ ] Adding TypeScript to a Project / Tooling - [ ] Primitives, Unions, Type Inference and Type: Any - [ ] Arrays and Tuples - [ ] Functions - [ ] Objects - [ ] Type Aliases - [ ] Narrowing and Type Assertions - [ ] Tips for Learning Typescript - [ ] Extra Goodies",
+  "main": "example.js",
+  "scripts": {
+    "compile": "tsc",
+    "clear": "rm -rf dist",
+    "start": "npm run clear && npm run compile && node dist/example.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@tsconfig/recommended": "^1.0.3"
+  }
+}
