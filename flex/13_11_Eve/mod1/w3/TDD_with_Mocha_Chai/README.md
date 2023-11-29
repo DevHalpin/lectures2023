@@ -8,8 +8,8 @@
 - [x] Intro to NPM: a Node package manager
 - [x] Mocha test runner
 - [x] Ignoring files/folders
-- [] Chai assertion library
-- [] What is TDD?
+- [x] Chai assertion library
+- [x] What is TDD?
 
 
 3 ways to install packages: 
