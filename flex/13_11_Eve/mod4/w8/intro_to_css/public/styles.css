@@ -1,0 +1,59 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 24px;
+}
+
+article > section {
+  width: 50%;
+}
+
+article {
+  display: flex;
+  background-color: #ccefc5; 
+  border: solid black 1px; 
+  box-shadow: 4px 4px 4px darkgrey;
+  width: 720px;
+  padding: 32px;
+  gap: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2{
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+h3{ 
+  font-size: 18px;
+  font-weight: bold;
+}
+
+li, p{
+  font-size: 16px;
+}
+
+ul.taglist{
+  list-style-type: none;
+  padding-left: 0px;
+  display:flex;
+  gap: 12px;
+}
+
+.tag {
+  background-color: gray;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 20px;
+}
