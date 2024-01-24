@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./scripts/cats.js"></script>
+    <script src="./scripts/app.js"></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>The Cat Wiki</title>
+  </head>
+  <body>
+    <h1>The Cat Wiki</h1>
+    <form id="cat-form">
+      <label for="cat-name">Cat Name</label>
+      <input type="text" id="cat-name" name="name" />
+      <label for="cat-age">Cat Age</label>
+      <input type="text" id="cat-age" name="age" />
+      <label for="cat-breed">Cat Breed</label>
+      <input type="text" id="cat-breed" name="breed" />
+      <label for="cat-gender">Cat Gender</label>
+      <input type="text" id="cat-gender" name="gender"/>
+      <label for="cat-color">Cat Color</label>
+      <input type="text" id="cat-color" name="color" />
+      <button type="submit">Add Cat</button>
+    <div id="cat-list">    
+    </div>
+  </body>
+</html>

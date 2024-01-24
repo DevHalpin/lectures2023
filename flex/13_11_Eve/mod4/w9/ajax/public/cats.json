@@ -1,0 +1,32 @@
+[{
+  "id": "abc",
+  "name": "Charlie",
+  "breed": "Siamese",
+  "gender": "Male",
+  "age": "4",
+  "color": "white"
+},
+{
+  "id": "def",
+  "breed": "Short Hair",
+  "gender": "Female",
+  "age": "4",
+  "color": "Tuxedo",
+  "name": "Nova"
+},
+{
+  "id": "ghi",
+  "breed": "Tabby",
+  "gender": "Male",
+  "age": "9",
+  "color": "Tabby",
+  "name": "Frank"
+},
+{
+ "id": "jkl",
+ "breed": "Persian",
+ "gender": "Female",
+ "age": "5",
+ "color": "White",
+ "name": "Mia"
+}]
