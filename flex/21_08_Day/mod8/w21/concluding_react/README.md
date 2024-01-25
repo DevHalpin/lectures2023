@@ -1,8 +1,9 @@
 # M8W21 Concluding React
 
+
 ## To Do:
 
-[] Build a Simple App
+[x] Build a Simple App
 
 ## Running this Example
 
@@ -11,7 +12,7 @@ Open a terminal window:
 ```BASH
 cd ./back-end            # Enter the back-end folder
 npm install              # Install dependencies
-node ./express_server.js # Start the Express server
+npm start # Start the Express server
 ```
 
 Open a **second** terminal window:
@@ -34,34 +35,29 @@ npm start      # Start the React development server
 const toDos = [
     {
         id: 'jfsdkljfdklsflsdlflsd' // uniqid()
-        title: 'Buy Milk',
-        checked: true // || false
+        task: 'Buy Milk',
+        completed: true // || false
     },
     {
         id: 'sdfdsfdsfdfdsfffsdfsd' // uniqid()
-        title: 'Study React',
-        checked: false
+        task: 'Study React',
+        completed: false
     }
 ];
 ```
 
 ## API Endpoints
 
-Index, Create, Read, Update, Delete, Edit, Save.
+Index, Delete, Edit
 
 * Index:  `GET /api/todos` (Show all to-dos.)
-* Read:   `GET /api/todos/:id` (Show single to-do.)
-* Update: `PUT /api/todos/:id` (Update single to-do.)
 * Delete: `DELETE /api/todos/:id` (Delete single to-do.)
-* Save:   `POST /api/todos` (Add new to-do.)
+* Edit: `POST /api/todos/:id/complete` (Edit single to-do completion status.)
 
 ### React Planning
 
 Components:
-* Header
-* Form
-* ToDoList
-    * ToDo
+* ToDoItem
 
 ## Resources
 
