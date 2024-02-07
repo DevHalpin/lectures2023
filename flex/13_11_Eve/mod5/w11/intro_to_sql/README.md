@@ -1,14 +1,17 @@
 # M05W11 - SQL Intro
 
+[Code](https://github.com/DevHalpin/lectures2023/tree/master/flex/13_11_Eve/mod5/w11/intro_to_sql)  
+[Video](https://vimeo.com/910667382/dde56d85ab?share=copy)  
+
 ### To Do
-- [ ] Introduction to RDBMS
-- [ ] The Relational Data Model (Tables, Columns, Rows)
-- [ ] `SELECT` Statements
-- [ ] Filtering and ordering
-- [ ] Joining tables
-- [ ] Grouping records
-- [ ] Aggregation functions
-- [ ] `LIMIT` and `OFFSET`
+- [x] Introduction to RDBMS
+- [x] The Relational Data Model (Tables, Columns, Rows)
+- [x] `SELECT` Statements
+- [x] Filtering and ordering
+- [x] Joining tables
+- [x] Grouping records
+- [x] Aggregation functions
+- [x] `LIMIT` and `OFFSET`
 
 ### Relational Database Management System (RDBMS)
 - A program that serves, **and** controls interactions with, one or more _Relational Databases_
@@ -220,7 +223,7 @@ ORDER BY payment_due_date;
 6. List all the countries users live in; don't repeat any countries (DISTINCT)
 
 ```sql
-SELECT country 
+SELECT DISTINCT country 
 FROM users;
 ```
 
@@ -253,7 +256,7 @@ GROUP BY albums.id
 ```sql
 SELECT album_name, COUNT(songs.title)
 FROM albums
-LEFT JOIN songs
+INNER JOIN songs
 ON albums.id = songs.album_id
 GROUP BY albums.id
 HAVING COUNT(songs.title) > 3
@@ -310,6 +313,11 @@ GROUP BY album_name
 
 
 -- we can use a subquery to put these two queries together
+SELECT *
+FROM albums
+JOIN songs
+ON albums.id = songs.album_id
+WHERE songs.rating > (SELECT AVG(rating) FROM songs WHERE album_id = albums.id)
 
 ```
 
