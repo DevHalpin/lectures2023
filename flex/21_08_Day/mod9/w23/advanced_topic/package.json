@@ -1,0 +1,20 @@
+{
+  "name": "advanced_intro_to_typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "why_typescript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc",
+    "clear": "rm -rf dist",
+    "start": "npm run clear & npm run compile && node dist/why_typescript.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.3",
+    "@types/node": "^20.11.16",
+    "typescript": "^5.3.3"
+  }
+}
