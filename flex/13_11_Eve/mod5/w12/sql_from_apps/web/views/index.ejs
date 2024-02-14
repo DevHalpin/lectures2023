@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Customers</h1>
+    <ul>
+        <% customers.forEach(function(customer) { %>
+            <li><form action="/customers/<%= customer.id%>" method="POST">
+                <input type="input" name="first_name" placeholder="<%= customer.first_name%>"/>
+                
+             <%= customer.last_name %> <%= customer.email %> <button type="submit">Submit</button> </form><form action="/customers/<%= customer.id%>/delete" method="POST">
+                <button type="submit">Delete</button>
+            </form></li>
+        <% }); %>
+    </ul>
+
+    <h2>Add a Customer</h2>
+
+    <form action="/customers/" method="POST">
+        <input type="input" name="first_name" placeholder="First Name"/>
+        <input type="input" name="last_name" placeholder="Last Name"/>
+        <input type="input" name="email" placeholder="Email"/>
+        <button type="submit">Submit</button>
+    </form>
+
+    
+</body>
+</html>
