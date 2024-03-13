@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- <script >
+        const domContainerElement = document.getElementById("root");
+        const reactRoot = ReactDOM.createRoot(domContainerElement);
+
+        class HelloComponent extends React.Component {
+            render() {
+    // Notice we pass the HTML element, and the text inside.
+            return React.createElement('p', {}, 'Hello, World!');
+            }
+        }
+        // const HelloComponent = () => {}
+        reactRoot.render(React.createElement(HelloComponent, null, null));
+        </script> -->
+        <script type="text/babel">
+            const domContainerElement = document.getElementById('root');
+            const reactRoot = ReactDOM.createRoot(domContainerElement);
+          
+            function HelloComponent () {
+              // Here we can see JSX at work! Much cleaner...
+              return <p onClick={() => {console.log('Clicked!');}}>Hello, World!</p>;
+            }
+          
+            reactRoot.render(HelloComponent());
+          </script>
+</body>
+</html>
