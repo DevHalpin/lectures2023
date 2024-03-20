@@ -2,6 +2,8 @@
 
 
 export const StockCard = (props) => {
+
+  //handle the increase and decrease of the count of the particular item in separate functions
   
   const increaseCount = () => {
     const countCopy = { ...props.count };  //make a copy of the count object
@@ -15,11 +17,15 @@ export const StockCard = (props) => {
     props.setCount(countCopy); //set the count object to the new copy
   }
 
+  //handle the increase and decrease of the price of the particular item in a single function
+
   const adjustPrice = (value) => {
     const priceCopy = { ...props.price }; //make a copy of the price object
     priceCopy[props.id] += value; //increment or decrement the price of the particular item we're accessing
     props.setPrice(priceCopy); //set the price object to the new copy
   }
+
+  
 
   const handleCountChange = (e) => {
     e.preventDefault();
