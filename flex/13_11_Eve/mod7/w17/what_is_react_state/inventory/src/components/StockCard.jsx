@@ -4,39 +4,39 @@
 export const StockCard = (props) => {
   
   const increaseCount = () => {
-    const countCopy = { ...props.count };
-    countCopy[props.id]++;
-    props.setCount(countCopy);
+    const countCopy = { ...props.count };  //make a copy of the count object
+    countCopy[props.id]++; //increment the count of the particular item we're accessing
+    props.setCount(countCopy); //set the count object to the new copy
   };
 
   const decreaseCount = () => {
-    const countCopy = { ...props.count };
-    countCopy[props.id]--;
-    props.setCount(countCopy);
+    const countCopy = { ...props.count }; //make a copy of the count object
+    countCopy[props.id]--; //decrement the count of the particular item we're accessing
+    props.setCount(countCopy); //set the count object to the new copy
   }
 
   const adjustPrice = (value) => {
-    const priceCopy = { ...props.price };
-    priceCopy[props.id] += value;
-    props.setPrice(priceCopy);
+    const priceCopy = { ...props.price }; //make a copy of the price object
+    priceCopy[props.id] += value; //increment or decrement the price of the particular item we're accessing
+    props.setPrice(priceCopy); //set the price object to the new copy
   }
 
   const handleCountChange = (e) => {
     e.preventDefault();
-    const countData = new FormData(e.target);
-    const count = countData.get("count");
-    const countCopy = { ...props.count };
-    countCopy[props.id] = parseInt(count);
-    props.setCount(countCopy);
+    const countData = new FormData(e.target); //create a new FormData object from the form
+    const count = countData.get("count"); //get the value of the input with the name "count"
+    const countCopy = { ...props.count }; //make a copy of the count object
+    countCopy[props.id] = parseInt(count); //set the count of the particular item we're accessing to the new value
+    props.setCount(countCopy); //set the count object to the new copy
   }
 
   const handlePriceChange = (e) => {
     e.preventDefault();
-    const priceData = new FormData(e.target);
-    const price = priceData.get("price");
-    const priceCopy = { ...props.price };
-    priceCopy[props.id] = parseInt(price);
-    props.setPrice(priceCopy);
+    const priceData = new FormData(e.target); //create a new FormData object from the form
+    const price = priceData.get("price");  //get the value of the input with the name "price"
+    const priceCopy = { ...props.price }; //make a copy of the price object
+    priceCopy[props.id] = parseInt(price); //set the price of the particular item we're accessing to the new value
+    props.setPrice(priceCopy); //set the price object to the new copy
   }
 
   return (
