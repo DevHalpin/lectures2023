@@ -1,13 +1,13 @@
 # M07W18 - Custom Hooks
 
 ### To Do
-- [] Custom Hooks
+- [x] Custom Hooks
 #### Demo
-- [] Fetch data on button click for both Posts and Hits
-- [] Show loading states
-- [] Show Error States
-- [] Allow Liking of Hits and Favouriting of Posts
-- [] Use Optimistic Updates for Liking and Favouriting
+- [x] Fetch data on button click for both Posts and Hits
+- [x] Show loading states
+- [x] Show Error States
+- [x] Allow Liking of Hits and Favouriting of Posts
+- [x] Use Optimistic Updates for Liking and Favouriting
 
 
 ### Custom Hooks
