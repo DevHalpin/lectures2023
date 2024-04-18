@@ -1,7 +1,8 @@
 # Mod7W17 | State Management and Immutable Update Patterns
 
-[Video]()  
-[Code]()  
+[Video Part 1](https://vimeo.com/936444678/abc0ae0154?share=copy)  
+[Video Part 2](https://vimeo.com/936444825/3e24f1ea12?share=copy)  
+[Code](https://github.com/DevHalpin/lectures2023/tree/master/flex/11_12_Day/mod7/w17/state_management_and_immutable_patterns)  
 
 - [x] Refresh on State Management
 - [x] UI State vs DB caching
