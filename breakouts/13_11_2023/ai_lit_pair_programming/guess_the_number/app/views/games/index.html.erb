@@ -1,0 +1,25 @@
+<h1><%= @messages[:heading] %></h1>
+
+<p><%= @messages[:alert] %></p>
+
+<dl>
+    <dt>Score</dt>
+    <dd><%= @messages[:score] %></dd>
+    <dt>Remaining Attempts</dt>
+    <dd><%= @messages[:attempts] %></dd>
+</dl>
+
+<% if @messages[:attempts] > 0 %>
+<form action="#" method="post">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <label for="guess">Enter your guess (a number between 1 and 100):</label>
+    <input type="number" name="guess" id="guess" required>
+    <br>
+    <button type="submit">Guess</button>
+  </form>
+<% end %>
+
+ <form method="POST" action="#">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <input type="submit" name="new_game" value="New Game">
+</form>
